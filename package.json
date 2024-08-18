@@ -3,6 +3,7 @@
   "name": "singleton",
   "scripts": {
     "build": "esbuild src/*.ts --bundle=false --platform=node --outdir=dist --format=esm",
+    "build-browser": "esbuild src/*.ts --bundle=false --platform=browser --outdir=browser --format=esm",
     "start": "node dist/index.js"
   },
   "packageManager": "yarn@4.2.2",
