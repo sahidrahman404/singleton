@@ -1,4 +1,16 @@
 {
+  "type": "module",
   "name": "singleton",
-  "packageManager": "yarn@4.2.2"
+  "scripts": {
+    "build": "esbuild src/*.ts --bundle=false --platform=node --outdir=dist --format=esm",
+    "start": "node dist/index.js"
+  },
+  "packageManager": "yarn@4.2.2",
+  "devDependencies": {
+    "@types/node": "^22.4.0",
+    "esbuild": "^0.23.1",
+    "prettier": "^3.3.3",
+    "tsc": "^2.0.4",
+    "typescript": "^5.5.4"
+  }
 }
