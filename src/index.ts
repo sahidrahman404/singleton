@@ -13,15 +13,18 @@ increaseCountByOne();
 console.log("get count with first imported function");
 count = getCount();
 console.log({ count });
+// count === 1
 
 console.log("\nincrease count by 1 with second imported function");
 increaseCountByOne2();
 console.log("get count with first imported function");
 count = getCount();
 console.log({ count });
+// count === 2
 
 console.log("\nincrease count by 1 with first imported function");
 increaseCountByOne();
 console.log("get count with second imported function");
 count = getCount2();
 console.log({ count });
+// count === 3
